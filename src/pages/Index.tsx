@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tv, Music, Wifi, ArrowUp } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const Index = () => {
+  // State for active tab
+  const [activeTab, setActiveTab] = useState("tv-streaming");
+  
   return (
     <div className="min-h-screen flex flex-col">
       {/* Navigation Bar */}
@@ -306,6 +310,178 @@ const Index = () => {
                 <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
               </CardFooter>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Entertainment Options Section */}
+      <section className="bg-white py-16 px-6 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto">
+          {/* Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-[#00b894] text-3xl md:text-4xl font-bold mb-4">
+              ¡Disfruta de lo mejor del cine y<br/>
+              eventos en vivo en un solo lugar!
+            </h2>
+            <p className="text-gray-700 max-w-3xl mx-auto">
+              Con nuestros planes de internet de fibra óptica y estos increíbles servicios de
+              streaming, ¡tendrás una experiencia de entretenimiento sin igual! Elige tus
+              plataformas favoritas y empieza a disfrutar de lo mejor en cine, series, música,
+              deportes y videojuegos. ¡Click te conecta con el mundo del entretenimiento!
+            </p>
+          </div>
+          
+          {/* Tabs */}
+          <div className="mt-8">
+            <Tabs 
+              defaultValue="tv-streaming" 
+              value={activeTab}
+              onValueChange={setActiveTab} 
+              className="w-full"
+            >
+              <div className="flex justify-center mb-8">
+                <TabsList>
+                  <TabsTrigger 
+                    value="tv-streaming" 
+                    className="px-8 py-3 data-[state=active]:bg-[#004c6d] data-[state=active]:text-white"
+                  >
+                    <Tv className="w-4 h-4 mr-2" /> TV Streaming
+                  </TabsTrigger>
+                  <TabsTrigger 
+                    value="musica" 
+                    className="px-8 py-3 data-[state=active]:bg-[#004c6d] data-[state=active]:text-white"
+                  >
+                    <Music className="w-4 h-4 mr-2" /> Música
+                  </TabsTrigger>
+                  <TabsTrigger 
+                    value="gaming" 
+                    className="px-8 py-3 data-[state=active]:bg-[#004c6d] data-[state=active]:text-white"
+                  >
+                    Gaming
+                  </TabsTrigger>
+                </TabsList>
+              </div>
+
+              {/* TV Streaming Content */}
+              <TabsContent value="tv-streaming" className="mt-6">
+                <div className="space-y-12">
+                  {/* Star+ */}
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                    <div className="md:col-span-1 flex justify-center">
+                      <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Star%2B_logo.svg/2560px-Star%2B_logo.svg.png" 
+                        alt="Star+" 
+                        className="h-12 object-contain"
+                      />
+                    </div>
+                    <div className="md:col-span-2">
+                      <h3 className="text-xl font-bold mb-2">Star+</h3>
+                      <p className="text-gray-700">
+                        La plataforma de streaming que te ofrece una amplia variedad de 
+                        contenido de alta calidad. Desde las mejores series, películas y 
+                        documentales, hasta programas de televisión y contenido exclusivo. 
+                        Con Star+, siempre tendrás algo interesante que ver. No te pierdas lo 
+                        mejor del entretenimiento en un solo lugar.
+                      </p>
+                    </div>
+                    <div className="md:col-span-1 text-center">
+                      <div className="text-2xl font-bold text-[#004c6d]">$8 al mes</div>
+                      <Button className="mt-4 bg-[#00b894] hover:bg-[#00a382]">Agregar</Button>
+                    </div>
+                  </div>
+
+                  {/* IPTV Television */}
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                    <div className="md:col-span-1 flex justify-center">
+                      <div className="h-16 w-16">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full text-[#004c6d]">
+                          <rect x="2" y="7" width="20" height="15" rx="2" stroke="currentColor" strokeWidth="2" />
+                          <path d="M17 3L12 7L7 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div className="md:col-span-2">
+                      <h3 className="text-xl font-bold mb-2">IPTV Televisión</h3>
+                      <p className="text-gray-700">
+                        Una revolución en la forma de ver la televisión. Con IPTV, podrás 
+                        disfrutar de una amplia variedad de canales en alta definición y sin 
+                        interrupciones. Además, tendrás la posibilidad de ver tus programas 
+                        favoritos a la hora que desees gracias a su función de grabación y 
+                        reproducción.
+                      </p>
+                    </div>
+                    <div className="md:col-span-1 text-center">
+                      <div className="text-2xl font-bold text-[#004c6d]">$4.50 al mes</div>
+                      <Button className="mt-4 bg-[#00b894] hover:bg-[#00a382]">Agregar</Button>
+                    </div>
+                  </div>
+
+                  {/* Netflix Estándar */}
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                    <div className="md:col-span-1 flex justify-center">
+                      <img 
+                        src="https://cdn.worldvectorlogo.com/logos/netflix-3.svg" 
+                        alt="Netflix" 
+                        className="h-12 object-contain"
+                      />
+                    </div>
+                    <div className="md:col-span-2">
+                      <h3 className="text-xl font-bold mb-2">Netflix Estándar</h3>
+                      <p className="text-gray-700">
+                        Disfruta de las mejores películas, series y documentales en uno de los 
+                        servicios de streaming más populares del mundo. Desde producciones 
+                        originales hasta clásicos atemporales, Netflix tiene algo para todos. 
+                        Este plan permite que dos usuarios disfruten de contenido en HD al 
+                        mismo tiempo.
+                      </p>
+                    </div>
+                    <div className="md:col-span-1 text-center">
+                      <div className="text-2xl font-bold text-[#004c6d]">$8.50 al mes</div>
+                      <Button className="mt-4 bg-[#00b894] hover:bg-[#00a382]">Agregar</Button>
+                    </div>
+                  </div>
+
+                  {/* Netflix Premium */}
+                  <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
+                    <div className="md:col-span-1 flex justify-center">
+                      <img 
+                        src="https://cdn.worldvectorlogo.com/logos/netflix-3.svg" 
+                        alt="Netflix" 
+                        className="h-12 object-contain"
+                      />
+                    </div>
+                    <div className="md:col-span-2">
+                      <h3 className="text-xl font-bold mb-2">Netflix Premium</h3>
+                      <p className="text-gray-700">
+                        Para los verdaderos amantes del cine y las series, Netflix Premium 
+                        permite que hasta cuatro usuarios disfruten simultáneamente de 
+                        contenido en Ultra HD. ¡Nunca más tendrás que discutir sobre qué ver!
+                      </p>
+                    </div>
+                    <div className="md:col-span-1 text-center">
+                      <div className="text-2xl font-bold text-[#004c6d]">$10 al mes</div>
+                      <Button className="mt-4 bg-[#00b894] hover:bg-[#00a382]">Agregar</Button>
+                    </div>
+                  </div>
+                </div>
+              </TabsContent>
+
+              {/* Música Content */}
+              <TabsContent value="musica" className="mt-6">
+                <div className="p-8 text-center">
+                  <h3 className="text-2xl font-semibold mb-4">Servicios de música próximamente</h3>
+                  <p>Estamos trabajando para traerte las mejores plataformas de streaming de música.</p>
+                </div>
+              </TabsContent>
+
+              {/* Gaming Content */}
+              <TabsContent value="gaming" className="mt-6">
+                <div className="p-8 text-center">
+                  <h3 className="text-2xl font-semibold mb-4">Servicios de gaming próximamente</h3>
+                  <p>Estamos trabajando para traerte las mejores plataformas de gaming.</p>
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
         </div>
       </section>
