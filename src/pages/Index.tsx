@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tv, Music, Wifi, ArrowUp, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
@@ -25,17 +26,20 @@ const Index = () => {
       <header className="bg-white py-4 px-6 md:px-12 lg:px-20 shadow-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center">
-            <a href="/" className="text-[#004c6d] text-2xl font-bold flex items-center">
-              click!
-              <span className="text-[#00b894] text-3xl">.</span>
+            <a href="/" className="text-[#46494F] text-2xl font-bold flex items-center">
+              <img 
+                src="/lovable-uploads/0b938288-c45d-4a66-8950-ca5af79fda4f.png" 
+                alt="Nuvik" 
+                className="h-8 mr-2"
+              />
             </a>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-gray-700 hover:text-[#00b894]">Inicio</a>
-            <a href="/planes" className="text-gray-700 hover:text-[#00b894]">Planes de internet</a>
-            <a href="/smart-home" className="text-gray-700 hover:text-[#00b894]">Smart home</a>
-            <a href="/contacto" className="text-gray-700 hover:text-[#00b894]">Contacto</a>
+            <a href="/" className="text-gray-700 hover:text-[#23b5e9]">Inicio</a>
+            <a href="/planes" className="text-gray-700 hover:text-[#23b5e9]">Planes de internet</a>
+            <a href="/smart-home" className="text-gray-700 hover:text-[#23b5e9]">Smart home</a>
+            <a href="/contacto" className="text-gray-700 hover:text-[#23b5e9]">Contacto</a>
             <a href="/mi-cuenta" className="account-button">MI CUENTA</a>
           </nav>
           
@@ -62,7 +66,7 @@ const Index = () => {
             Mejora tu experiencia de navegación con internet simétrico de fibra óptica. Experimenta la misma velocidad de descarga y de subida sin interrupciones.
           </p>
           <div>
-            <button className="click-button">
+            <button className="nuvik-button">
               VER PLANES
             </button>
           </div>
@@ -93,7 +97,7 @@ const Index = () => {
             
             {/* Right Side - Text Content */}
             <div className="w-full md:w-1/2 md:pl-12">
-              <h2 className="text-[#00b894] text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="text-[#a8c80e] text-3xl md:text-4xl font-bold mb-4">
                 Tus plataformas favoritas, <br />
                 en tu suscripción de internet <br />
                 fibra óptica.
@@ -117,7 +121,7 @@ const Index = () => {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Crunchyroll_Logo.png" alt="Crunchyroll" className="h-6 object-contain" />
               </div>
               
-              <button className="bg-[#00b894] hover:bg-[#00a382] text-white font-medium py-3 px-6 rounded transition-colors duration-200">
+              <button className="bg-[#a8c80e] hover:bg-[#98b80d] text-white font-medium py-3 px-6 rounded transition-colors duration-200">
                 NUEVOS PLANES
               </button>
             </div>
@@ -130,7 +134,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-[#00b894] text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-[#23b5e9] text-3xl md:text-4xl font-bold mb-4">
               Planes de internet y servicios streaming para la<br />
               nueva generación de hogares
             </h2>
@@ -142,7 +146,7 @@ const Index = () => {
           {/* Plans Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
             {/* Plan 1 - Basic */}
-            <Card className="border-t-4 border-t-[#00b894] hover:shadow-lg transition-shadow">
+            <Card className="border-t-4 border-t-[#23b5e9] hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="flex flex-col">
                   <span className="text-lg text-gray-700">Planes Básicos</span>
@@ -152,8 +156,8 @@ const Index = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-center bg-gray-50 py-4 rounded-lg">
                   <div className="text-center">
-                    <div className="font-bold text-2xl text-[#004c6d]">INTERNET 30 MBPS</div>
-                    <div className="text-[#00b894] text-3xl font-bold mt-2">$33.00</div>
+                    <div className="font-bold text-2xl text-[#46494F]">INTERNET 30 MBPS</div>
+                    <div className="text-[#a8c80e] text-3xl font-bold mt-2">$33.00</div>
                     <div className="text-gray-500">mensual</div>
                   </div>
                 </div>
@@ -164,31 +168,31 @@ const Index = () => {
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Tecnología fibra óptica</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Velocidad simétrica</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Añade servicios streaming a precio especial</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Ideal para hogares con pocos dispositivos conectados</span>
                     </li>
                   </ul>
                 </div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
+                <Button className="w-full bg-[#23b5e9] hover:bg-[#1ca5d6]">Contactar</Button>
               </CardFooter>
             </Card>
             
             {/* Plan 2 - Standard */}
-            <Card className="border-t-4 border-t-[#00b894] hover:shadow-lg transition-shadow">
+            <Card className="border-t-4 border-t-[#23b5e9] hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="flex flex-col">
                   <span className="text-lg text-gray-700">Plan Estándar</span>
@@ -198,8 +202,8 @@ const Index = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-center bg-gray-50 py-4 rounded-lg">
                   <div className="text-center">
-                    <div className="font-bold text-2xl text-[#004c6d]">INTERNET 50 MBPS</div>
-                    <div className="text-[#00b894] text-3xl font-bold mt-2">$37.00</div>
+                    <div className="font-bold text-2xl text-[#46494F]">INTERNET 50 MBPS</div>
+                    <div className="text-[#a8c80e] text-3xl font-bold mt-2">$37.00</div>
                     <div className="text-gray-500">mensual</div>
                   </div>
                 </div>
@@ -210,27 +214,27 @@ const Index = () => {
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Tecnología fibra óptica</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Velocidad simétrica</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Añade servicios streaming a precio especial</span>
                     </li>
                   </ul>
                 </div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
+                <Button className="w-full bg-[#23b5e9] hover:bg-[#1ca5d6]">Contactar</Button>
               </CardFooter>
             </Card>
             
             {/* Plan 3 - Premium */}
-            <Card className="border-t-4 border-t-[#00b894] hover:shadow-lg transition-shadow">
+            <Card className="border-t-4 border-t-[#23b5e9] hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="flex flex-col">
                   <span className="text-lg text-gray-700">Plan Premium</span>
@@ -240,8 +244,8 @@ const Index = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-center bg-gray-50 py-4 rounded-lg">
                   <div className="text-center">
-                    <div className="font-bold text-2xl text-[#004c6d]">INTERNET 100 MBPS</div>
-                    <div className="text-[#00b894] text-3xl font-bold mt-2">$55.00</div>
+                    <div className="font-bold text-2xl text-[#46494F]">INTERNET 100 MBPS</div>
+                    <div className="text-[#a8c80e] text-3xl font-bold mt-2">$55.00</div>
                     <div className="text-gray-500">mensual</div>
                   </div>
                 </div>
@@ -252,31 +256,31 @@ const Index = () => {
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Tecnología fibra óptica</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Velocidad simétrica</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Añade servicios streaming a precio especial</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Adecuado para familias y hogares con múltiples usuarios activos</span>
                     </li>
                   </ul>
                 </div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
+                <Button className="w-full bg-[#23b5e9] hover:bg-[#1ca5d6]">Contactar</Button>
               </CardFooter>
             </Card>
             
             {/* Plan 4 - Ultimate */}
-            <Card className="border-t-4 border-t-[#00b894] hover:shadow-lg transition-shadow">
+            <Card className="border-t-4 border-t-[#23b5e9] hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="flex flex-col">
                   <span className="text-lg text-gray-700">Plan Máximo</span>
@@ -286,8 +290,8 @@ const Index = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-center bg-gray-50 py-4 rounded-lg">
                   <div className="text-center">
-                    <div className="font-bold text-2xl text-[#004c6d]">INTERNET 150 MBPS</div>
-                    <div className="text-[#00b894] text-3xl font-bold mt-2">$75.00</div>
+                    <div className="font-bold text-2xl text-[#46494F]">INTERNET 150 MBPS</div>
+                    <div className="text-[#a8c80e] text-3xl font-bold mt-2">$75.00</div>
                     <div className="text-gray-500">mensual</div>
                   </div>
                 </div>
@@ -298,26 +302,26 @@ const Index = () => {
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Tecnología fibra óptica</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Velocidad simétrica 1:1</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Añade servicios streaming a precio especial</span>
                     </li>
                     <li className="flex items-start">
-                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <ArrowUp className="h-4 w-4 text-[#a8c80e] mr-2 mt-0.5" />
                       <span>Ideal para hogares con múltiples dispositivos y usuarios activos</span>
                     </li>
                   </ul>
                 </div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
+                <Button className="w-full bg-[#23b5e9] hover:bg-[#1ca5d6]">Contactar</Button>
               </CardFooter>
             </Card>
           </div>
@@ -329,7 +333,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-[#00b894] text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-[#23b5e9] text-3xl md:text-4xl font-bold mb-4">
               ¡Disfruta de lo mejor del cine y<br/>
               eventos en vivo en un solo lugar!
             </h2>
@@ -337,7 +341,7 @@ const Index = () => {
               Con nuestros planes de internet de fibra óptica y estos increíbles servicios de
               streaming, ¡tendrás una experiencia de entretenimiento sin igual! Elige tus
               plataformas favoritas y empieza a disfrutar de lo mejor en cine, series, música,
-              deportes y videojuegos. ¡Click te conecta con el mundo del entretenimiento!
+              deportes y videojuegos. ¡Nuvik te conecta con el mundo del entretenimiento!
             </p>
           </div>
           
@@ -353,19 +357,19 @@ const Index = () => {
                 <TabsList>
                   <TabsTrigger 
                     value="tv-streaming" 
-                    className="px-8 py-3 data-[state=active]:bg-[#004c6d] data-[state=active]:text-white"
+                    className="px-8 py-3 data-[state=active]:bg-[#46494F] data-[state=active]:text-white"
                   >
                     <Tv className="w-4 h-4 mr-2" /> TV Streaming
                   </TabsTrigger>
                   <TabsTrigger 
                     value="musica" 
-                    className="px-8 py-3 data-[state=active]:bg-[#004c6d] data-[state=active]:text-white"
+                    className="px-8 py-3 data-[state=active]:bg-[#46494F] data-[state=active]:text-white"
                   >
                     <Music className="w-4 h-4 mr-2" /> Música
                   </TabsTrigger>
                   <TabsTrigger 
                     value="gaming" 
-                    className="px-8 py-3 data-[state=active]:bg-[#004c6d] data-[state=active]:text-white"
+                    className="px-8 py-3 data-[state=active]:bg-[#46494F] data-[state=active]:text-white"
                   >
                     Gaming
                   </TabsTrigger>
@@ -395,8 +399,8 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="md:col-span-1 text-center">
-                      <div className="text-2xl font-bold text-[#004c6d]">$8 al mes</div>
-                      <Button className="mt-4 bg-[#00b894] hover:bg-[#00a382]">Agregar</Button>
+                      <div className="text-2xl font-bold text-[#46494F]">$8 al mes</div>
+                      <Button className="mt-4 bg-[#a8c80e] hover:bg-[#98b80d]">Agregar</Button>
                     </div>
                   </div>
 
@@ -404,7 +408,7 @@ const Index = () => {
                   <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
                     <div className="md:col-span-1 flex justify-center">
                       <div className="h-16 w-16">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full text-[#004c6d]">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full text-[#46494F]">
                           <rect x="2" y="7" width="20" height="15" rx="2" stroke="currentColor" strokeWidth="2" />
                           <path d="M17 3L12 7L7 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                         </svg>
@@ -421,8 +425,8 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="md:col-span-1 text-center">
-                      <div className="text-2xl font-bold text-[#004c6d]">$4.50 al mes</div>
-                      <Button className="mt-4 bg-[#00b894] hover:bg-[#00a382]">Agregar</Button>
+                      <div className="text-2xl font-bold text-[#46494F]">$4.50 al mes</div>
+                      <Button className="mt-4 bg-[#a8c80e] hover:bg-[#98b80d]">Agregar</Button>
                     </div>
                   </div>
 
@@ -446,8 +450,8 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="md:col-span-1 text-center">
-                      <div className="text-2xl font-bold text-[#004c6d]">$8.50 al mes</div>
-                      <Button className="mt-4 bg-[#00b894] hover:bg-[#00a382]">Agregar</Button>
+                      <div className="text-2xl font-bold text-[#46494F]">$8.50 al mes</div>
+                      <Button className="mt-4 bg-[#a8c80e] hover:bg-[#98b80d]">Agregar</Button>
                     </div>
                   </div>
 
@@ -469,8 +473,8 @@ const Index = () => {
                       </p>
                     </div>
                     <div className="md:col-span-1 text-center">
-                      <div className="text-2xl font-bold text-[#004c6d]">$10 al mes</div>
-                      <Button className="mt-4 bg-[#00b894] hover:bg-[#00a382]">Agregar</Button>
+                      <div className="text-2xl font-bold text-[#46494F]">$10 al mes</div>
+                      <Button className="mt-4 bg-[#a8c80e] hover:bg-[#98b80d]">Agregar</Button>
                     </div>
                   </div>
                 </div>
@@ -497,16 +501,17 @@ const Index = () => {
       </section>
 
       {/* Footer Section */}
-      <footer className="bg-[#004c6d] text-white py-12 px-6 md:px-12 lg:px-20">
+      <footer className="bg-[#46494F] text-white py-12 px-6 md:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Logo and Description */}
             <div className="md:col-span-1">
               <div className="flex items-center mb-4">
-                <h2 className="text-white text-3xl font-bold flex items-center">
-                  click!
-                  <span className="text-[#00b894] text-4xl">.</span>
-                </h2>
+                <img 
+                  src="/lovable-uploads/73c7e074-1294-4daa-8df6-6b061f887df7.png" 
+                  alt="Nuvik" 
+                  className="h-8 mb-2" 
+                />
               </div>
               <p className="text-sm text-gray-300 leading-relaxed">
                 La mejor conexión a internet de fibra óptica con ultra velocidad y la última tecnología
@@ -514,16 +519,16 @@ const Index = () => {
               
               {/* Social Icons */}
               <div className="flex space-x-4 mt-6">
-                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#00b894] hover:border-[#00b894] transition-colors duration-200">
+                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#23b5e9] hover:border-[#23b5e9] transition-colors duration-200">
                   <Facebook className="h-4 w-4" />
                 </a>
-                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#00b894] hover:border-[#00b894] transition-colors duration-200">
+                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#23b5e9] hover:border-[#23b5e9] transition-colors duration-200">
                   <Instagram className="h-4 w-4" />
                 </a>
-                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#00b894] hover:border-[#00b894] transition-colors duration-200">
+                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#23b5e9] hover:border-[#23b5e9] transition-colors duration-200">
                   <Twitter className="h-4 w-4" />
                 </a>
-                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#00b894] hover:border-[#00b894] transition-colors duration-200">
+                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#23b5e9] hover:border-[#23b5e9] transition-colors duration-200">
                   <Youtube className="h-4 w-4" />
                 </a>
               </div>
@@ -533,10 +538,10 @@ const Index = () => {
             <div className="md:col-span-1">
               <h3 className="font-bold text-lg mb-4">Compañía</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Comienza</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Internet</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">TV & Streaming</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Smart Home</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#23b5e9] text-sm">Comienza</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#23b5e9] text-sm">Internet</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#23b5e9] text-sm">TV & Streaming</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#23b5e9] text-sm">Smart Home</a></li>
               </ul>
             </div>
             
@@ -544,9 +549,9 @@ const Index = () => {
             <div className="md:col-span-1">
               <h3 className="font-bold text-lg mb-4">Soporte</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Centro de ayuda</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Ticket de soporte</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Contacto</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#23b5e9] text-sm">Centro de ayuda</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#23b5e9] text-sm">Ticket de soporte</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#23b5e9] text-sm">Contacto</a></li>
               </ul>
             </div>
             
@@ -565,7 +570,7 @@ const Index = () => {
                   />
                   <Button 
                     type="submit" 
-                    className="bg-[#00b894] hover:bg-[#00a382]"
+                    className="bg-[#a8c80e] hover:bg-[#98b80d]"
                   >
                     SUSCRIBIRSE
                   </Button>
@@ -578,11 +583,11 @@ const Index = () => {
           
           {/* Copyright and Legal Links */}
           <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
-            <div>Copyright © 2023 Click!. Todos los derechos reservados</div>
+            <div>Copyright © 2023 Nuvik. Todos los derechos reservados</div>
             <div className="flex space-x-4 mt-4 md:mt-0">
-              <a href="#" className="hover:text-[#00b894]">Términos del servicio</a>
-              <a href="#" className="hover:text-[#00b894]">Política y privacidad</a>
-              <a href="#" className="hover:text-[#00b894]">Política de cookies</a>
+              <a href="#" className="hover:text-[#23b5e9]">Términos del servicio</a>
+              <a href="#" className="hover:text-[#23b5e9]">Política y privacidad</a>
+              <a href="#" className="hover:text-[#23b5e9]">Política de cookies</a>
             </div>
           </div>
         </div>

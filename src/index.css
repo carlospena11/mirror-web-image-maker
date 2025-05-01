@@ -35,9 +35,11 @@
 
     --radius: 0.5rem;
 
-    /* Click! Website Colors */
-    --click-blue: 200 100% 15%;
-    --click-teal: 171 73% 50%;
+    /* Nuvik Website Colors */
+    --nuvik-dark-gray: 210 9% 31%;  /* #46494F */
+    --nuvik-blue: 191 82% 53%;      /* #23b5e9 */
+    --nuvik-green: 78 78% 42%;      /* #a8c80e */
+    --nuvik-light-gray: 0 0% 95%;   /* #f2f2f2 */
   }
 
   .dark {
@@ -82,15 +84,15 @@
   }
 }
 
-/* Click! Custom Styles */
+/* Nuvik Custom Styles */
 .hero-gradient {
-  background: linear-gradient(to right, hsl(200, 100%, 15%) 0%, hsl(200, 100%, 10%) 100%);
+  background: linear-gradient(to right, hsl(210, 9%, 31%) 0%, hsl(210, 9%, 25%) 100%);
 }
 
-.click-button {
-  @apply bg-[#00b894] hover:bg-[#00a382] text-white font-medium py-3 px-6 rounded transition-colors duration-200;
+.nuvik-button {
+  @apply bg-[#a8c80e] hover:bg-[#98b80d] text-white font-medium py-3 px-6 rounded transition-colors duration-200;
 }
 
 .account-button {
-  @apply bg-[#00b894] hover:bg-[#00a382] text-white font-bold py-2 px-6 rounded;
+  @apply bg-[#23b5e9] hover:bg-[#1ca5d6] text-white font-bold py-2 px-6 rounded;
 }
