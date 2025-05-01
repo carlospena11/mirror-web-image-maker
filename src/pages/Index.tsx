@@ -1,13 +1,23 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Tv, Music, Wifi, ArrowUp } from "lucide-react";
+import { Tv, Music, Wifi, ArrowUp, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Input } from "@/components/ui/input";
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   // State for active tab
   const [activeTab, setActiveTab] = useState("tv-streaming");
+  const [email, setEmail] = useState("");
+  
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Here you would typically handle the subscription
+    console.log("Subscribing email:", email);
+    setEmail("");
+  };
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -485,6 +495,98 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer className="bg-[#004c6d] text-white py-12 px-6 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {/* Logo and Description */}
+            <div className="md:col-span-1">
+              <div className="flex items-center mb-4">
+                <h2 className="text-white text-3xl font-bold flex items-center">
+                  click!
+                  <span className="text-[#00b894] text-4xl">.</span>
+                </h2>
+              </div>
+              <p className="text-sm text-gray-300 leading-relaxed">
+                La mejor conexión a internet de fibra óptica con ultra velocidad y la última tecnología
+              </p>
+              
+              {/* Social Icons */}
+              <div className="flex space-x-4 mt-6">
+                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#00b894] hover:border-[#00b894] transition-colors duration-200">
+                  <Facebook className="h-4 w-4" />
+                </a>
+                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#00b894] hover:border-[#00b894] transition-colors duration-200">
+                  <Instagram className="h-4 w-4" />
+                </a>
+                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#00b894] hover:border-[#00b894] transition-colors duration-200">
+                  <Twitter className="h-4 w-4" />
+                </a>
+                <a href="#" className="w-8 h-8 border border-gray-400 rounded-full flex items-center justify-center hover:bg-[#00b894] hover:border-[#00b894] transition-colors duration-200">
+                  <Youtube className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+            
+            {/* Company Links */}
+            <div className="md:col-span-1">
+              <h3 className="font-bold text-lg mb-4">Compañía</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Comienza</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Internet</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">TV & Streaming</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Smart Home</a></li>
+              </ul>
+            </div>
+            
+            {/* Support Links */}
+            <div className="md:col-span-1">
+              <h3 className="font-bold text-lg mb-4">Soporte</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Centro de ayuda</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Ticket de soporte</a></li>
+                <li><a href="#" className="text-gray-300 hover:text-[#00b894] text-sm">Contacto</a></li>
+              </ul>
+            </div>
+            
+            {/* Newsletter */}
+            <div className="md:col-span-1">
+              <h3 className="font-bold text-lg mb-2">Enterate de nuestras ofertas exclusivas suscribiéndote a nuestro boletín de noticias.</h3>
+              <form onSubmit={handleSubscribe} className="mt-4">
+                <div className="flex flex-col space-y-2">
+                  <Input 
+                    type="email" 
+                    placeholder="Email" 
+                    className="bg-white text-black" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                  <Button 
+                    type="submit" 
+                    className="bg-[#00b894] hover:bg-[#00a382]"
+                  >
+                    SUSCRIBIRSE
+                  </Button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <Separator className="my-8 bg-gray-600" />
+          
+          {/* Copyright and Legal Links */}
+          <div className="flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+            <div>Copyright © 2023 Click!. Todos los derechos reservados</div>
+            <div className="flex space-x-4 mt-4 md:mt-0">
+              <a href="#" className="hover:text-[#00b894]">Términos del servicio</a>
+              <a href="#" className="hover:text-[#00b894]">Política y privacidad</a>
+              <a href="#" className="hover:text-[#00b894]">Política de cookies</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
