@@ -1,7 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Tv, Music } from "lucide-react";
+import { Tv, Music, Wifi, ArrowUp } from "lucide-react";
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
   return (
@@ -106,6 +107,205 @@ const Index = () => {
                 NUEVOS PLANES
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Internet Plans Section */}
+      <section className="bg-gray-50 py-16 px-6 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto">
+          {/* Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-[#00b894] text-3xl md:text-4xl font-bold mb-4">
+              Planes de internet y servicios streaming para la<br />
+              nueva generación de hogares
+            </h2>
+            <p className="text-gray-700 max-w-3xl mx-auto">
+              Trabaja en línea con aplicaciones y programas de alto rendimiento y para varias personas o dispositivos conectados simultáneamente.
+            </p>
+          </div>
+          
+          {/* Plans Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+            {/* Plan 1 - Basic */}
+            <Card className="border-t-4 border-t-[#00b894] hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex flex-col">
+                  <span className="text-lg text-gray-700">Planes Básicos</span>
+                  <span className="text-sm text-gray-500">Internet súper rápido</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-center bg-gray-50 py-4 rounded-lg">
+                  <div className="text-center">
+                    <div className="font-bold text-2xl text-[#004c6d]">INTERNET 30 MBPS</div>
+                    <div className="text-[#00b894] text-3xl font-bold mt-2">$33.00</div>
+                    <div className="text-gray-500">mensual</div>
+                  </div>
+                </div>
+                
+                <div>
+                  <p className="text-gray-700 mb-3">
+                    Conexión básica y económica para navegar por la web, consultar correos electrónicos y disfrutar de contenidos en streaming de baja calidad.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Tecnología fibra óptica</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Velocidad simétrica</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Añade servicios streaming a precio especial</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Ideal para hogares con pocos dispositivos conectados</span>
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
+              </CardFooter>
+            </Card>
+            
+            {/* Plan 2 - Standard */}
+            <Card className="border-t-4 border-t-[#00b894] hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex flex-col">
+                  <span className="text-lg text-gray-700">Plan Estándar</span>
+                  <span className="text-sm text-gray-500">Mayor conectividad</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-center bg-gray-50 py-4 rounded-lg">
+                  <div className="text-center">
+                    <div className="font-bold text-2xl text-[#004c6d]">INTERNET 50 MBPS</div>
+                    <div className="text-[#00b894] text-3xl font-bold mt-2">$37.00</div>
+                    <div className="text-gray-500">mensual</div>
+                  </div>
+                </div>
+                
+                <div>
+                  <p className="text-gray-700 mb-3">
+                    Adecuado para usuarios que desean una conexión más rápida para realizar tareas cotidianas en línea y ver vídeos en streaming en calidad estándar.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Tecnología fibra óptica</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Velocidad simétrica</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Añade servicios streaming a precio especial</span>
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
+              </CardFooter>
+            </Card>
+            
+            {/* Plan 3 - Premium */}
+            <Card className="border-t-4 border-t-[#00b894] hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex flex-col">
+                  <span className="text-lg text-gray-700">Plan Premium</span>
+                  <span className="text-sm text-gray-500">Alto rendimiento</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-center bg-gray-50 py-4 rounded-lg">
+                  <div className="text-center">
+                    <div className="font-bold text-2xl text-[#004c6d]">INTERNET 100 MBPS</div>
+                    <div className="text-[#00b894] text-3xl font-bold mt-2">$55.00</div>
+                    <div className="text-gray-500">mensual</div>
+                  </div>
+                </div>
+                
+                <div>
+                  <p className="text-gray-700 mb-3">
+                    Ideal para quienes desean una conexión estable para disfrutar de contenidos en streaming en alta definición y realizar videoconferencias sin interrupciones.
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Tecnología fibra óptica</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Velocidad simétrica</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Añade servicios streaming a precio especial</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Adecuado para familias y hogares con múltiples usuarios activos</span>
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
+              </CardFooter>
+            </Card>
+            
+            {/* Plan 4 - Ultimate */}
+            <Card className="border-t-4 border-t-[#00b894] hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex flex-col">
+                  <span className="text-lg text-gray-700">Plan Máximo</span>
+                  <span className="text-sm text-gray-500">Velocidad extrema</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center justify-center bg-gray-50 py-4 rounded-lg">
+                  <div className="text-center">
+                    <div className="font-bold text-2xl text-[#004c6d]">INTERNET 150 MBPS</div>
+                    <div className="text-[#00b894] text-3xl font-bold mt-2">$75.00</div>
+                    <div className="text-gray-500">mensual</div>
+                  </div>
+                </div>
+                
+                <div>
+                  <p className="text-gray-700 mb-3">
+                    Lorem ipsum dolor sit amet calesua
+                  </p>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Tecnología fibra óptica</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Velocidad simétrica 1:1</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Añade servicios streaming a precio especial</span>
+                    </li>
+                    <li className="flex items-start">
+                      <ArrowUp className="h-4 w-4 text-[#00b894] mr-2 mt-0.5" />
+                      <span>Ideal para hogares con múltiples dispositivos y usuarios activos</span>
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button className="w-full bg-[#00b894] hover:bg-[#00a382]">Contactar</Button>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </section>
